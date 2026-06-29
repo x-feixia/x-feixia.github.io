@@ -1240,6 +1240,7 @@ body[data-theme=dark] .post pre {
 body[data-theme=dark] .post pre code {
   border-left: none;
   background-color: transparent;
+  color: #cdd6f4;
 }
 body[data-theme=dark] kbd {
   border-color: #1b1d25;
