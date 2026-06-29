@@ -1354,6 +1354,12 @@ body[data-theme=dark] .search-article input[type=search]::-webkit-input-placehol
   color: rgba(128, 128, 128, 0.8);
 }
 
+@media screen and (min-width: 1152px) {
+  .wrapper.post {
+    max-width: 1020px;
+  }
+}
+
 .post-body {
   display: flex;
   gap: 40px;
