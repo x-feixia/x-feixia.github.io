@@ -1229,6 +1229,12 @@ body[data-theme=dark] .post h6 .anchor-head {
 body[data-theme=dark] code.highlighter-rouge {
   background-color: #1b1d25;
 }
+body[data-theme=dark] code {
+  background-color: #1b1d25;
+}
+body[data-theme=dark] .post pre {
+  background-color: #1b1d25;
+}
 body[data-theme=dark] kbd {
   border-color: #1b1d25;
   color: #eaeaea;
