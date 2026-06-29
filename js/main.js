@@ -64,11 +64,18 @@
 
       // Keep TOC visible on scroll via JS
       if (tocWrapper) {
+        let ticking = false;
         const updateTocPosition = () => {
-          tocWrapper.style.top = (window.scrollY + 100) + "px";
+          tocWrapper.style.transform = "translateY(" + (window.scrollY + 100) + "px)";
+          ticking = false;
         };
         updateTocPosition();
-        window.addEventListener("scroll", updateTocPosition, { passive: true });
+        window.addEventListener("scroll", function () {
+          if (!ticking) {
+            requestAnimationFrame(updateTocPosition);
+            ticking = true;
+          }
+        }, { passive: true });
       }
 
       // Scroll highlight
