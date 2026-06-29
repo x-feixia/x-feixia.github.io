@@ -62,20 +62,13 @@
       });
       tocContainer.appendChild(list);
 
-      // Keep TOC visible on scroll via JS
+      // Keep TOC visible on scroll
       if (tocWrapper) {
-        let ticking = false;
         const updateTocPosition = () => {
-          tocWrapper.style.transform = "translateY(" + (window.scrollY + 100) + "px)";
-          ticking = false;
+          tocWrapper.style.top = (window.scrollY + 100) + "px";
         };
         updateTocPosition();
-        window.addEventListener("scroll", function () {
-          if (!ticking) {
-            requestAnimationFrame(updateTocPosition);
-            ticking = true;
-          }
-        }, { passive: true });
+        window.addEventListener("scroll", updateTocPosition, { passive: true });
       }
 
       // Scroll highlight
