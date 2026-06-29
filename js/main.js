@@ -38,9 +38,9 @@
 
   // TOC generation
   const tocContainer = document.getElementById("toc");
-  const postContent = document.querySelector(".post-content");
+  const postContent = document.querySelector(".wrapper.post .page-content");
   if (tocContainer && postContent) {
-    const headings = postContent.querySelectorAll("h2, h3, h4");
+    const headings = postContent.querySelectorAll("h1, h2, h3, h4");
     if (headings.length > 0) {
       const list = document.createElement("ul");
       list.className = "toc-list";
