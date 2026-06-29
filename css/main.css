@@ -1234,8 +1234,12 @@ body[data-theme=dark] .post code {
   color: #cdd6f4;
 }
 body[data-theme=dark] .post pre {
-  background-color: #1e1e2e;
+  background-color: #282840;
   border-left: 2px solid #45475a;
+}
+body[data-theme=dark] .post pre code {
+  border-left: none;
+  background-color: transparent;
 }
 body[data-theme=dark] kbd {
   border-color: #1b1d25;
