@@ -1356,8 +1356,7 @@ body[data-theme=dark] .search-article input[type=search]::-webkit-input-placehol
 
 .toc-container {
   display: none;
-  position: fixed;
-  top: 100px;
+  position: absolute;
   right: 30px;
   width: 220px;
   max-height: calc(100vh - 120px);

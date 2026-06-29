@@ -38,6 +38,7 @@
 
   // TOC generation
   const tocContainer = document.getElementById("toc");
+  const tocWrapper = document.getElementById("toc-container");
   const postContent = document.querySelector(".wrapper.post .page-content");
   if (tocContainer && postContent) {
     const headings = postContent.querySelectorAll("h1, h2, h3, h4");
@@ -60,6 +61,15 @@
         list.appendChild(li);
       });
       tocContainer.appendChild(list);
+
+      // Keep TOC visible on scroll via JS
+      if (tocWrapper) {
+        const updateTocPosition = () => {
+          tocWrapper.style.top = (window.scrollY + 100) + "px";
+        };
+        updateTocPosition();
+        window.addEventListener("scroll", updateTocPosition, { passive: true });
+      }
 
       // Scroll highlight
       const links = list.querySelectorAll(".toc-link");
