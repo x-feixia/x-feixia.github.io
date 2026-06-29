@@ -1377,7 +1377,7 @@ body[data-theme=dark] .search-article input[type=search]::-webkit-input-placehol
   border-left: 2px solid #ececec;
   padding-left: 16px;
 }
-@media screen and (max-width: 1152px) {
+@media screen and (min-width: 1152px) {
   .toc-container {
     display: block;
   }
