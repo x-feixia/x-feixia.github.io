@@ -1227,14 +1227,15 @@ body[data-theme=dark] .post h6 .anchor-head {
   color: #ff5277;
 }
 body[data-theme=dark] code.highlighter-rouge {
-  background-color: #2a2d3a;
+  background-color: #1e1e2e;
 }
 body[data-theme=dark] .post code {
-  background-color: #2a2d3a;
+  background-color: #1e1e2e;
+  color: #cdd6f4;
 }
 body[data-theme=dark] .post pre {
-  background-color: #2a2d3a;
-  border-left: 2px solid #ff5277;
+  background-color: #1e1e2e;
+  border-left: 2px solid #45475a;
 }
 body[data-theme=dark] kbd {
   border-color: #1b1d25;
