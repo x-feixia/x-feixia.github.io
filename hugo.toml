@@ -1,0 +1,46 @@
+baseURL                = "https://x-feixia.github.io/"
+locale                 = "zh-cn"
+title                  = "Hi"
+defaultContentLanguage = "zh"
+hasCJKLanguage         = true
+theme                  = "stack"
+
+[pagination]
+    pagerSize = 10
+
+[permalinks]
+    post = "/p/:slug/"
+
+[params]
+    mainSections   = ["post"]
+    rssFullContent = true
+    favicon        = "img/avatar.jpg"
+
+[params.footer]
+    since = 2026
+
+[params.sidebar]
+    emoji    = "👨‍💻"
+    subtitle = "CTF 学习笔记"
+    avatar   = "img/avatar.jpg"
+
+[params.article.toc]
+    enabled = true
+
+[params.article.license]
+    enabled = false
+
+[params.widgets]
+    homepage = [
+        { type = "search" },
+        { type = "archives", params = { limit = 5 } },
+        { type = "categories", params = { limit = 10 } },
+        { type = "tag-cloud", params = { limit = 10 } },
+    ]
+    page     = [{ type = "toc" }]
+
+[params.comments]
+    enabled = false
+
+[params.cookies]
+    enabled = false
