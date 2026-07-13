@@ -21,7 +21,7 @@ theme                  = "stack"
 
 [params.sidebar]
     emoji    = "👨‍💻"
-    subtitle = "CTF 学习笔记"
+    subtitle = ""
     avatar   = "img/avatar.jpg"
 
 [params.article.toc]
