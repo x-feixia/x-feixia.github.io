@@ -2,7 +2,7 @@
 title: "春秋云境-initial"
 date: 2026-08-29T15:00:00+08:00
 draft: false
-tags: ["内网渗透"]
+tags: ["渗透"]
 summary: "春秋云境 initial 内网渗透靶机解题记录"
 slug: "initial"
 ---
