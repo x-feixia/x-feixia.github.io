@@ -21,7 +21,7 @@ theme                  = "stack"
 
 [params.sidebar]
     emoji    = "👨‍💻"
-    subtitle = ""
+    subtitle = "fakesh0t |  study at ouc"
     avatar   = "img/avatar.jpg"
 
 [params.article.toc]
